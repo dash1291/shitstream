@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.0.0.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/style.css"/>
+<title>Shit Stream</title>
+</head>
+<body>
+<div class="container">
+	<div id="header">
+		<a href="http://localhost:8080"><h1>Shitstream</h1></a>
+		{% if current_user %}
+			<p id="sign-out">Tired of all the Shit? You should <a href="http://localhost:8080/logout">Sign Out</a></p>
+		{% endif %}
+	</div>
+	<div id="content">
+	{% block content %}{% endblock %}
+	</div>
+</div>
+</body>
+</html>

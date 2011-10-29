@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+		{% if shits %}
+			{% for shit in shits %}
+			<div class="shit-item well">
+				<img class="user-pic" src="{{ shit.user.photo }}"/>
+				<p class="user-name">{{ shit.user.name }}</p>
+				<h3>{{ shit.text }}</h3>
+				<p>Posted on: {{ shit.time|date:"F jS" }}</p>
+			</div>
+			{% endfor %}
+		{% endif %}
+{% endblock %}

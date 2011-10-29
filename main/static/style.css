@@ -1,0 +1,25 @@
+.user-pic
+{
+box-shadow:0px 0px 3px #555;
+border:2px solid white;
+float:left;
+margin-right:15px;
+}
+.shit-container
+{
+clear:both;
+margin-bottom:50px;
+}
+#sign-out
+{
+float:right;
+}
+.user-name
+{
+font-size:12pt;
+}
+h2
+{
+clear:both;
+}
+#content{clear:both;}

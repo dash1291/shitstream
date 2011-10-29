@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h1><small>Shit the Person</small></h1><br/>
+<p><img class="user-pic" src="{{ user.photo }}"/></p>
+<p class="user-name">{{ user.name }}</p>
+<p><a href="<?php echo $url?>/shit.php">Shit someone else</a></p>
+<br/>
+<h2><small>Thats all you need to know to shit about. Go ahead...</small></h2>
+<form action="" method="POST">{% csrf_token %}
+<textarea name="text" cols="50" rows="5"></textarea><br/>
+<input type="hidden" name="id" value="{{ user.uid }}"/>
+<input type="submit" class="btn large primary" value="Shit yeah"/>
+</form>
+{% endblock %}
+
+
